@@ -1,7 +1,8 @@
-Password Generator
-## Description
+##Password Generator
 
 This is a basic javascript based password generator. It takes in results of user inputs through prompts and confirms, and generates a password within their parameters.
+
+https://lancebailey26.github.io/PasswordGenerator/
 
 ![Password Generator](passwordgenerator.gif)
 MIT License
