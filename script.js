@@ -62,7 +62,7 @@ function writePassword() {
   //clearPassword();  originally i had a function to reset the password field on mouse hover, decided i could just redefined outputArray to prevent the generator from adding additional characters to the end of the previous password.
   var password = generatePassword();
   var passwordText = document.querySelector("#password");
-  outputArray = [];
+  // outputArray = [];
   passwordText.value = password;
 }
 // function clearPassword() { //resets the password field and output array variable
