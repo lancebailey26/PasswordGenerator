@@ -59,18 +59,18 @@ function generatePassword() {
 
 // Write password to the #password input
 function writePassword() {
-  //clearPassword();  originally i had a function to reset the password field on mouse hover, decided i could just redefined outputArray to prevent the generator from adding additional characters to the end of the previous password.
+  clearPassword();  //originally i had a function to reset the password field on mouse hover, decided i could just redefined outputArray to prevent the generator from adding additional characters to the end of the previous password.
   var password = generatePassword();
   var passwordText = document.querySelector("#password");
-  // outputArray = [];
+  outputArray = [];
   passwordText.value = password;
 }
-// function clearPassword() { //resets the password field and output array variable
-//   var passwordText = document.querySelector("#password");
-//   passwordText.value = null;
-//   outputArray = [];
-//}
+function clearPassword() { //resets the password field and output array variable
+  var passwordText = document.querySelector("#password");
+  passwordText.value = null;
+  outputArray = [];
+}
 // Add event listener to generate button, on click it performs function writePassword
-// generateBtn.addEventListener("mouseover",clearPassword); //resets password field and output array variable on mouseover
+generateBtn.addEventListener("mouseover",clearPassword); //resets password field and output array variable on mouseover
 
 generateBtn.addEventListener("click", writePassword);
