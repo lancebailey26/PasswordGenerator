@@ -14,6 +14,7 @@ function passwordChoices(){ //here are the menu options the user can decide upon
   var passwordLength = prompt("Choose a password length. (8-128 characters)")
   if (passwordLength < 8 || passwordLength > 128){
     alert("Must be between 8 and 128 characters.")  //demands an input length between 8 and 128 characters
+    return
   }
   var incSpecial = confirm("Include Special Characters?")  //confirmation boolean for special characters array
   var incNumbers = confirm("Include Numbers?")  //confirmation boolean for numbers array
@@ -69,6 +70,7 @@ function clearPassword() { //resets the password field and output array variable
   var passwordText = document.querySelector("#password");
   passwordText.value = null;
   outputArray = [];
+  resultsArray = [];
 }
 // Add event listener to generate button, on click it performs function writePassword
 generateBtn.addEventListener("mouseover",clearPassword); //resets password field and output array variable on mouseover
