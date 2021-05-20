@@ -24,6 +24,7 @@ function passwordChoices(){ //here are the menu options the user can decide upon
   if( incLowercase === false && incNumbers === false && incUppercase === false && incSpecial === false){
 alert ("You must choose at least one modifier.") //this loop tells the user to pick at least one modifier.
   }
+  return
   var result = {   //consolidates results of prompts/confirms to easier to digest data
     passwordLength: passwordLength,
     haveSpecial: incSpecial,
